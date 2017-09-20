@@ -1,7 +1,7 @@
 message.unity3d|dd130690e26efaaf7209ff21953e0c99
-message.unity3d.manifest|98d34f293e93e19a2db59f931061ae1c
+message.unity3d.manifest|cc455499066b4a3ebf7e8234da543bb8
 prompt.unity3d|4e6fb3e77a3d1481c400ecc4ae3f6845
-prompt.unity3d.manifest|286027d248dfecfec06fbae6d43d2e8d
+prompt.unity3d.manifest|ef2ce8515144b3dc6daef6577e36d1e7
 prompt_asset.unity3d|bef3bdde486f74b89ce24780f867276b
 prompt_asset.unity3d.manifest|57e981b2e0fea6df6cf7904b0fda4f9e
 shared_asset.unity3d|08ac292fe8ebc51d065e71ca7835e24d
@@ -14,7 +14,7 @@ lua/eventlib.lua|5b6f6d67f568ad41f97c619d533b89d0
 lua/events.lua|94bd71b0a7df7b2193efa5a1bdf4bc37
 lua/list.lua|4d64938755c602f80b4c03d4bbaa3d29
 lua/ltn12.lua|5f0d3400869c871e35cda3ff7551209a
-lua/Main.lua|1afd1efb2e9b48ada5f320c9c4f554cb
+lua/Main.lua|21f06a9b7216271cf35b0618dd2cd8a6
 lua/mime.lua|2e001d487613c4ae82f79ac23b8c978f
 lua/slot.lua|67f502892ab09833c6f810ea2a1a48d2
 lua/socket.lua|f62021b8c3d4b62d419fdb2054c86e31
@@ -65,10 +65,10 @@ lua/3rd/sproto/test.lua|95883de988a26f5491196cba1153b9ef
 lua/3rd/sproto/testall.lua|2103f47e4c0c66c813213f51dfbf406b
 lua/3rd/sproto/testrpc.lua|62e1d66bbdf0abb43f8c14f9be9f007b
 lua/cjson/util.lua|d9187071b6c2cae70ac95cff4170bf36
-lua/Common/define.lua|1d0e0fb2e14a32c422eaf088dc200398
+lua/Common/define.lua|5f4f9905185772ef43422690ea98ce09
 lua/Common/functions.lua|ff1ffcc2289a05dccca1387c9b22298c
 lua/Common/protocal.lua|9842a503ab8c2b53be70d0053453337d
-lua/Controller/KeyInputCtrl.lua|64a5c343687b0948d134477ace2a3a53
+lua/Controller/KeyInputCtrl.lua|fa761759d96821955725eb72528d9592
 lua/Controller/LZRFirstCtrl.lua|4009500a5a0d6d1bef7a330099394bfa
 lua/Controller/LZRSecondCtrl.lua|d3479b84e43bd6276222b34293c9df0e
 lua/Controller/MessageCtrl.lua|9dae410267472a32b8fa26348bceb859
@@ -91,7 +91,8 @@ lua/jit/v.lua|c498afc8cb8bbd6422cc4197cbc17f2c
 lua/jit/vmdef.lua|5e5b09e8b297f3598686c37fb1f592f8
 lua/jit/zone.lua|a66fcc63674ac8a728d02fb1f9bef4e7
 lua/Logic/CtrlManager.lua|3b7ddbad4edf80375d4b37474aac0da8
-lua/Logic/Game.lua|160fdb724ccdef7ac7f7a9391908d062
+lua/Logic/EventManager.lua|f03181e66008a756e604b7b569dd950f
+lua/Logic/Game.lua|f8b208e8b92ce133a48bab185acc5bb5
 lua/Logic/LuaClass.lua|281529a11fe604b67523c328f8412cc0
 lua/Logic/Network.lua|18e507f5c1fa3e603dc4815126da1689
 lua/lpeg/re.lua|fb58fd8e4d992ab829a9f5c94d1a3bb4

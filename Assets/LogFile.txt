@@ -1,21 +1,285 @@
-日志文件创建的时间  9/20/2017 11:55:21 AM
-9/20/2017 11:55:21 AM--世界的起点
-9/20/2017 11:55:21 AM--11:55:18.496-1: Init lua state cost: 0.09309006
-9/20/2017 11:55:21 AM--11:55:18.712-1: Register lua type cost time: 0.2003944
-9/20/2017 11:55:21 AM--Initialize OK!!!
-9/20/2017 11:55:21 AM--11:55:18.950-3: LuaState start
-9/20/2017 11:55:21 AM--11:55:18.953-3: [tolua.lua:11]:ver20100 jit:     true    SSE2    SSE3    SSE4.1    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
-9/20/2017 11:55:21 AM--11:55:18.956-3: [tolua.lua:12]:os: Windows, arch: x64
-9/20/2017 11:55:21 AM--HelloWorld
-9/20/2017 11:55:21 AM--Network.Start!!
-9/20/2017 11:55:21 AM--CtrlManager.Init----->>>
-9/20/2017 11:55:21 AM--PromptCtrl.New--->>
-9/20/2017 11:55:21 AM--MessageCtrl.New--->>
-9/20/2017 11:55:21 AM--LZRFirstCtrl.New--->>
-9/20/2017 11:55:21 AM--LZRSecondCtrl.New--->>
-9/20/2017 11:55:21 AM--KeyInputCtrl.New--->>
-9/20/2017 11:55:21 AM--LuaFramework InitOK--->>>
-9/20/2017 11:55:21 AM--OnPoolPushElement--->>>LuaFramework.TestObjectClass
-9/20/2017 11:55:21 AM--OnPoolGetElement--->>>LuaFramework.TestObjectClass
-9/20/2017 11:55:21 AM--11:55:19.56-3: TestObjectClass--->>>name=abcd value1=100 = value2=200
-9/20/2017 11:55:21 AM--TestGameObject--->>>TestGameObject_01 (UnityEngine.GameObject)
+日志文件创建的时间  9/20/2017 3:50:33 PM
+9/20/2017 3:50:33 PM--世界的起点
+9/20/2017 3:50:33 PM--15:50:27.415-1: Init lua state cost: 0.08054233
+9/20/2017 3:50:33 PM--15:50:27.615-1: Register lua type cost time: 0.1872087
+9/20/2017 3:50:33 PM--Initialize OK!!!
+9/20/2017 3:50:33 PM--15:50:27.782-3: LuaState start
+9/20/2017 3:50:33 PM--15:50:27.786-3: [tolua.lua:11]:ver20100 jit:     true    SSE2    SSE3    SSE4.1    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
+9/20/2017 3:50:33 PM--15:50:27.788-3: [tolua.lua:12]:os: Windows, arch: x64
+9/20/2017 3:50:33 PM--HelloWorld
+9/20/2017 3:50:33 PM--Network.Start!!
+9/20/2017 3:50:33 PM--CtrlManager.Init----->>>
+9/20/2017 3:50:33 PM--PromptCtrl.New--->>
+9/20/2017 3:50:33 PM--MessageCtrl.New--->>
+9/20/2017 3:50:33 PM--LZRFirstCtrl.New--->>
+9/20/2017 3:50:33 PM--LZRSecondCtrl.New--->>
+9/20/2017 3:50:33 PM--KeyInputCtrl.New--->>
+9/20/2017 3:50:33 PM--LuaFramework InitOK--->>>
+9/20/2017 3:50:33 PM--OnPoolPushElement--->>>LuaFramework.TestObjectClass
+9/20/2017 3:50:33 PM--OnPoolGetElement--->>>LuaFramework.TestObjectClass
+9/20/2017 3:50:33 PM--15:50:27.868-3: TestObjectClass--->>>name=abcd value1=100 = value2=200
+9/20/2017 3:50:33 PM--TestGameObject--->>>TestGameObject_01 (UnityEngine.GameObject)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)
+9/20/2017 3:50:33 PM--ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+9/20/2017 3:50:33 PM--GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced)

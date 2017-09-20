@@ -11,6 +11,7 @@ local core = require "sproto.core"
 local print_r = require "3rd/sproto/print_r"
 
 require "Logic/LuaClass"
+require "Logic/EventManager"
 require "Logic/CtrlManager"
 require "Common/functions"
 require "Controller/PromptCtrl"
@@ -50,7 +51,7 @@ function Game.OnInitOK()
     -- this.test_lpeg_func();
     -- this.test_sproto_func();
     -- coroutine.start(this.test_coroutine);
-
+    EventManager.Init();
     CtrlManager.Init();
     -- local ctrl = CtrlManager.GetCtrl(CtrlNames.Prompt);
     -- if ctrl ~= nil and AppConst.ExampleMode == 1 then

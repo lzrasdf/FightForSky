@@ -5,7 +5,7 @@ CtrlNames = {
 	LZRFirst = "LZRFirstCtrl",
 	LZRSecond = "LZRSecondCtrl",
 
-	keyInput = "keyInputCtrl"
+	KeyInput = "KeyInputCtrl"
 }
 
 PanelNames = {

@@ -45,5 +45,5 @@ Assets:
 - Assets/LuaFramework/Examples/Builds/Prompt/PromptItem.prefab
 - Assets/LuaFramework/Examples/Builds/Prompt/PromptPanel.prefab
 Dependencies:
-- J:/GitHubProject/LuaFramework_UGUI-master/Assets/StreamingAssets/prompt_asset.unity3d
-- J:/GitHubProject/LuaFramework_UGUI-master/Assets/StreamingAssets/shared_asset.unity3d
+- J:/GitHubProject/FightForSky/Assets/StreamingAssets/prompt_asset.unity3d
+- J:/GitHubProject/FightForSky/Assets/StreamingAssets/shared_asset.unity3d

@@ -11,6 +11,7 @@ local core = require "sproto.core"
 local print_r = require "3rd/sproto/print_r"
 
 require "Logic/LuaClass"
+require "Logic/EventManager"
 require "Logic/CtrlManager"
 require "Common/functions"
 require "Controller/PromptCtrl"
@@ -50,7 +51,7 @@ function Game.OnInitOK()
     -- this.test_lpeg_func();
     -- this.test_sproto_func();
     -- coroutine.start(this.test_coroutine);
-
+    EventManager.Init();
     CtrlManager.Init();
     -- local ctrl = CtrlManager.GetCtrl(CtrlNames.Prompt);
     -- if ctrl ~= nil and AppConst.ExampleMode == 1 then
@@ -65,9 +66,7 @@ function Game.OnInitOK()
     --     print('----LZR Game.lua 60-- inside=',inside)
     --     ctrl2:Awake();
     -- end
-    local lzr_ctrl = CtrlManager.GetCtrl(CtrlNames.LZRFirst)
-    print('----LZR LZRFirstCtrl.lua 22-- data=',lzr_ctrl.testData)
-       
+    
     logWarn('LuaFramework InitOK--->>>');
 end
 

@@ -44,7 +44,6 @@ end
 --单击事件--
 function LZRSecondCtrl.OnClick(go)
 	logWarn("OnClick---->>>"..go.name);
-	--print('----LZR LZRSecondCtrl.lua 47-- LZRFirstModel.Des=',LZRFirstModel:GetInstance().describe)
 end
 
 --关闭事件--
