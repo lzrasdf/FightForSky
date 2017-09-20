@@ -234,8 +234,12 @@ namespace LuaFramework {
             LuaManager.InitStart();
 
             LuaManager.DoFile("Logic/Game");         //加载游戏
+            //项目模板原本就有网络接口部分，先屏蔽，后面看看取优还是说合并
+            /*
             LuaManager.DoFile("Logic/Network");      //加载网络
             NetManager.OnInit();                     //初始化网络
+            */
+            //项目模板原本就有网络接口部分，先屏蔽，后面看看取优还是说合并
             Util.CallMethod("Game", "OnInitOK");     //初始化完成
 
             initialize = true;

@@ -37,9 +37,11 @@ end
 
 --初始化完成，发送链接服务器信息--
 function Game.OnInitOK()
-    AppConst.SocketPort = 2012;
-    AppConst.SocketAddress = "127.0.0.1";
-    networkMgr:SendConnect();
+    -- AppConst.SocketPort = 2012;
+    -- AppConst.SocketAddress = "127.0.0.1";
+    AppConst.SocketPort = 8888;
+    AppConst.SocketAddress = "192.168.5.117";
+    --networkMgr:SendConnect();
 
     --注册LuaView--
     this.InitViewPanels();
@@ -53,20 +55,7 @@ function Game.OnInitOK()
     -- coroutine.start(this.test_coroutine);
     EventManager.Init();
     CtrlManager.Init();
-    -- local ctrl = CtrlManager.GetCtrl(CtrlNames.Prompt);
-    -- if ctrl ~= nil and AppConst.ExampleMode == 1 then
-    --     ctrl:Awake();
-    -- end
 
-
-    -- local ctrl2 = CtrlManager.GetCtrl(CtrlNames.LZRFirstCtrl);
-    -- print('----LZR Game.lua 59-- ctrl2=',ctrl2)
-    -- print('----LZR Game.lua 60-- data=',AppConst.ExampleMode)
-    -- if ctrl2 ~= nil and AppConst.ExampleMode == 1 then
-    --     print('----LZR Game.lua 60-- inside=',inside)
-    --     ctrl2:Awake();
-    -- end
-    
     logWarn('LuaFramework InitOK--->>>');
 end
 
