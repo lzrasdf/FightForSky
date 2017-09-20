@@ -1,0 +1,21 @@
+日志文件创建的时间  9/20/2017 11:55:21 AM
+9/20/2017 11:55:21 AM--世界的起点
+9/20/2017 11:55:21 AM--11:55:18.496-1: Init lua state cost: 0.09309006
+9/20/2017 11:55:21 AM--11:55:18.712-1: Register lua type cost time: 0.2003944
+9/20/2017 11:55:21 AM--Initialize OK!!!
+9/20/2017 11:55:21 AM--11:55:18.950-3: LuaState start
+9/20/2017 11:55:21 AM--11:55:18.953-3: [tolua.lua:11]:ver20100 jit:     true    SSE2    SSE3    SSE4.1    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
+9/20/2017 11:55:21 AM--11:55:18.956-3: [tolua.lua:12]:os: Windows, arch: x64
+9/20/2017 11:55:21 AM--HelloWorld
+9/20/2017 11:55:21 AM--Network.Start!!
+9/20/2017 11:55:21 AM--CtrlManager.Init----->>>
+9/20/2017 11:55:21 AM--PromptCtrl.New--->>
+9/20/2017 11:55:21 AM--MessageCtrl.New--->>
+9/20/2017 11:55:21 AM--LZRFirstCtrl.New--->>
+9/20/2017 11:55:21 AM--LZRSecondCtrl.New--->>
+9/20/2017 11:55:21 AM--KeyInputCtrl.New--->>
+9/20/2017 11:55:21 AM--LuaFramework InitOK--->>>
+9/20/2017 11:55:21 AM--OnPoolPushElement--->>>LuaFramework.TestObjectClass
+9/20/2017 11:55:21 AM--OnPoolGetElement--->>>LuaFramework.TestObjectClass
+9/20/2017 11:55:21 AM--11:55:19.56-3: TestObjectClass--->>>name=abcd value1=100 = value2=200
+9/20/2017 11:55:21 AM--TestGameObject--->>>TestGameObject_01 (UnityEngine.GameObject)
