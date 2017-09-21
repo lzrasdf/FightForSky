@@ -28,25 +28,29 @@ namespace LuaFramework {
 	public class MyNetworkManager : Manager 
 	{
 	    private static byte[] result = new byte[1024];
-	    private static IPAddress ip = IPAddress.Parse("192.168.5.117"); //设定服务器IP地址
+	    private static IPAddress ip = IPAddress.Parse("192.168.5.118"); //设定服务器IP地址
 	    private static Socket clientSocket = null; // socket接口
+
+	    private static Thread DoReqConnect = null;
+	    private static Thread recvMsg = null;
 
 	    private static void Connect()
 	    {
+	    	CloseConnectThread();
 	    	Debug.Log("!!!!TryConnectNetWork!!!!");
 	        clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 	        try
 	        {
 	            clientSocket.Connect(new IPEndPoint(ip, 8888)); //配置服务器IP与端口
 
-	            Thread recvMsg = new Thread(new ThreadStart(RecvMsg));
+	            recvMsg = new Thread(new ThreadStart(RecvMsg));
 	            recvMsg.IsBackground = true;
 	            recvMsg.Start();
-	           /* send_test();*/
 	        }
 	        catch
 	        {
-	        	Debug.LogError("连接服务器失败，请按回车键退出！");
+	        	Debug.LogWarning("连接服务器失败，请按回车键退出！");
+	        	CloseRecvThread();
 	            return;
 	        }
 	    }
@@ -54,7 +58,20 @@ namespace LuaFramework {
 	    // 连接请求
 	    public static void ReqConnect()
 	    {
-	        Connect();
+	    	DoReqConnect = new Thread(new ThreadStart(Connect));
+            DoReqConnect.IsBackground = true;
+            DoReqConnect.Start();
+	    }
+
+	    // 关闭连接请求进程
+	    public static void CloseConnectThread()
+	    {
+	    	DoReqConnect.Abort();
+	    }
+	    // 关闭接收进程
+	    public static void CloseRecvThread()
+	    {
+	    	recvMsg.Abort();
 	    }
 
 	    // 切断网路请求
@@ -115,16 +132,16 @@ namespace LuaFramework {
 	        }
 	    }
 
-	    public static void TestMessage(string context) {
-            CallMethod("asdf",context);
+	    public static void TestMessage(String context) {
+            CallMethod("TestGetData",context);
         }
 
 		/// <summary>
         /// 执行Lua方法
         /// </summary>
-        public static object[] CallMethod(string func, params object[] args) {
-        	//怎么传递参数才是大问题我勒个去
-            return Util.CallMethod("Game", func);
+        public static object[] CallMethod(String func, params object[] args) {
+        	//这个参数写法不熟悉，暂时只传字符串
+            return Util.CallMethod("Game", func,args);
         }
 	}
 }

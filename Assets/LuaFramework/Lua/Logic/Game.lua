@@ -228,6 +228,6 @@ function Game.OnDestroy()
 end
 
 
-function Game.asdf()
-    logWarn('TestMessage Network...');
+function Game.TestGetData(data)
+    print('----LZR Game.lua 232-- data=',data)
 end
