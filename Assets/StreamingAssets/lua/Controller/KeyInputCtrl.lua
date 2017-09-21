@@ -8,26 +8,26 @@ local test_bind_id = nil
 
 local function Update()
     if UnityEngine.Input.GetKeyDown("b") then
-        local function test()
-        	local lzr_ctrl = CtrlManager.GetCtrl(CtrlNames.LZRFirst)
-       		print('----LZR LZRFirstCtrl.lua 22-- data=',lzr_ctrl.testData)
+        if not test_bind_id then
+            local function test()
+            	local lzr_ctrl = CtrlManager.GetCtrl(CtrlNames.LZRFirst)
+           		print('----LZR LZRFirstCtrl.lua 22-- data=',lzr_ctrl.testData)
+            end
+            test_bind_id = EventManager:Bind("test",test)
         end
-        test_bind_id = EventManager:Bind("test",test)
+        print('bind')
     end
 
     if UnityEngine.Input.GetKeyDown("u") then
-        print('----LZR KeyInputCtrl.lua 19-- unbind=',unbind)
+        print('unbind=')
         EventManager:UnBind("test",test_bind_id)
         test_bind_id = nil
     end
 
     if UnityEngine.Input.GetKeyDown("f") then
-    	-- local temp = LZRFirstModel:GetInstance( ).describe
-    	-- print('----LZR KeyInputCtrl.lua 30-- temp=',temp)
         print("fire")
         EventManager:Fire("test")
     end
-
 end
 
 --构建函数

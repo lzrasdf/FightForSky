@@ -57,8 +57,13 @@ public static class CustomSettings
         //_GT(typeof(Dictionary<int, TestAccount>.ValueCollection)),
         //_GT(typeof(TestExport)),
         //_GT(typeof(TestExport.Space)),
-        //-------------------------------------------------------------------        
-                        
+        //-------------------------------------------------------------------  
+
+        /*还没确定好网络部分怎么做整体架构，还没什么思路想法
+        不想卡住，先这么弄着新部分，后面看情况调整
+        */
+        _GT(typeof(MyNetworkManager)),
+
         _GT(typeof(Debugger)).SetNameSpace(null),          
 
 #if USING_DOTWEENING

@@ -1,21 +1,22 @@
-日志文件创建的时间  2017/9/20 19:43:55
-2017/9/20 19:43:55--世界的起点
-2017/9/20 19:43:55--19:43:52.63-1: Init lua state cost: 0.1143175
-2017/9/20 19:43:55--19:43:52.362-1: Register lua type cost time: 0.2796109
-2017/9/20 19:43:55--Initialize OK!!!
-2017/9/20 19:43:55--19:43:52.569-3: LuaState start
-2017/9/20 19:43:55--19:43:52.574-3: [tolua.lua:11]:ver20100 jit:     true    SSE2    SSE3    SSE4.1    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
-2017/9/20 19:43:55--19:43:52.576-3: [tolua.lua:12]:os: Windows, arch: x64
-2017/9/20 19:43:55--HelloWorld
-2017/9/20 19:43:55--CtrlManager.Init----->>>
-2017/9/20 19:43:55--PromptCtrl.New--->>
-2017/9/20 19:43:55--MessageCtrl.New--->>
-2017/9/20 19:43:55--LZRFirstCtrl.New--->>
-2017/9/20 19:43:55--LZRSecondCtrl.New--->>
-2017/9/20 19:43:55--KeyInputCtrl.New--->>
-2017/9/20 19:43:55--LuaFramework InitOK--->>>
-2017/9/20 19:43:55--OnPoolPushElement--->>>LuaFramework.TestObjectClass
-2017/9/20 19:43:55--OnPoolGetElement--->>>LuaFramework.TestObjectClass
-2017/9/20 19:43:55--19:43:52.650-3: TestObjectClass--->>>name=abcd value1=100 = value2=200
-2017/9/20 19:43:55--TestGameObject--->>>TestGameObject_01 (UnityEngine.GameObject)
-2017/9/20 19:43:55--19:43:52.663-3: Lua function Network.OnSocket not exists
+日志文件创建的时间  2017/9/21 17:19:33
+2017/9/21 17:19:33--世界的起点
+2017/9/21 17:19:33--17:19:30.845-1: Init lua state cost: 0.1174721
+2017/9/21 17:19:33--17:19:31.156-1: Register lua type cost time: 0.2916582
+2017/9/21 17:19:33--Initialize OK!!!
+2017/9/21 17:19:33--17:19:31.367-3: LuaState start
+2017/9/21 17:19:33--17:19:31.372-3: [tolua.lua:11]:ver20100 jit:     true    SSE2    SSE3    SSE4.1    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
+2017/9/21 17:19:33--17:19:31.374-3: [tolua.lua:12]:os: Windows, arch: x64
+2017/9/21 17:19:33--HelloWorld
+2017/9/21 17:19:33--!!!!TryConnectNetWork!!!!
+2017/9/21 17:19:33--向服务器发送消息:asdf
+2017/9/21 17:19:33--CtrlManager.Init----->>>
+2017/9/21 17:19:33--PromptCtrl.New--->>
+2017/9/21 17:19:33--MessageCtrl.New--->>
+2017/9/21 17:19:33--LZRFirstCtrl.New--->>
+2017/9/21 17:19:33--LZRSecondCtrl.New--->>
+2017/9/21 17:19:33--KeyInputCtrl.New--->>
+2017/9/21 17:19:33--LuaFramework InitOK--->>>
+2017/9/21 17:19:33--OnPoolPushElement--->>>LuaFramework.TestObjectClass
+2017/9/21 17:19:33--OnPoolGetElement--->>>LuaFramework.TestObjectClass
+2017/9/21 17:19:33--17:19:31.452-3: TestObjectClass--->>>name=abcd value1=100 = value2=200
+2017/9/21 17:19:33--TestGameObject--->>>TestGameObject_01 (UnityEngine.GameObject)

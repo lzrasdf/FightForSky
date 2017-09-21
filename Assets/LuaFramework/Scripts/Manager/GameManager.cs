@@ -235,9 +235,9 @@ namespace LuaFramework {
 
             LuaManager.DoFile("Logic/Game");         //加载游戏
             //项目模板原本就有网络接口部分，先屏蔽，后面看看取优还是说合并
-            /*
-            LuaManager.DoFile("Logic/Network");      //加载网络
-            NetManager.OnInit();                     //初始化网络
+            
+            //LuaManager.DoFile("Logic/Network");      //加载网络
+            /*NetManager.OnInit();                     //初始化网络
             */
             //项目模板原本就有网络接口部分，先屏蔽，后面看看取优还是说合并
             Util.CallMethod("Game", "OnInitOK");     //初始化完成
@@ -292,9 +292,12 @@ namespace LuaFramework {
         /// 析构函数
         /// </summary>
         void OnDestroy() {
-            if (NetManager != null) {
+            /*if (NetManager != null) {
                 NetManager.Unload();
-            }
+            }*/
+            //需要关闭网络线程不然unity客户端第二次开启会卡住
+            MyNetworkManager.ReqDisConnect();
+
             if (LuaManager != null) {
                 LuaManager.Close();
             }

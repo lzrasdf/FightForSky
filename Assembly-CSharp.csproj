@@ -181,6 +181,7 @@
      <Compile Include="Assets\LuaFramework\ToLua\Misc\LuaCoroutine.cs" />
      <Compile Include="Assets\LuaFramework\ToLua\Misc\LuaLooper.cs" />
      <Compile Include="Assets\LuaFramework\ToLua\Misc\LuaResLoader.cs" />
+     <Compile Include="Assets\LuaFramework\ToLua\MyNetwork\MyNetworkManager.cs" />
      <Compile Include="Assets\LuaFramework\ToLua\Reflection\LuaConstructor.cs" />
      <Compile Include="Assets\LuaFramework\ToLua\Reflection\LuaField.cs" />
      <Compile Include="Assets\LuaFramework\ToLua\Reflection\LuaMethod.cs" />
@@ -195,6 +196,7 @@
      <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\LuaFramework_LuaBehaviourWrap.cs" />
      <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\LuaFramework_LuaHelperWrap.cs" />
      <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\LuaFramework_LuaManagerWrap.cs" />
+     <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\LuaFramework_MyNetworkManagerWrap.cs" />
      <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\LuaFramework_NetworkManagerWrap.cs" />
      <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\LuaFramework_PanelManagerWrap.cs" />
      <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\LuaFramework_ResourceManagerWrap.cs" />

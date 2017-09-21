@@ -1,5 +1,8 @@
---利用ID分离对EventManager的直接引用
-EventManager = EventManager or BaseClass()
+--[[
+Author:LZR
+Description:事件控制器，目前是绑定触发解绑三个功能，其他要的话再加
+    ]]
+EventManager = EventManager or {}
 
 EventManager.list_all = EventManager.list_all or {}
 EventManager.bind_id = 0
