@@ -1,5 +1,6 @@
 require "3rd/pblua/login_pb"
 require "3rd/pbc/protobuf"
+require "Common/protocal"
 
 local lpeg = require "lpeg"
 
@@ -9,12 +10,15 @@ local util = require "3rd/cjson/util"
 local sproto = require "3rd/sproto/sproto"
 local core = require "sproto.core"
 local print_r = require "3rd/sproto/print_r"
+Event = require 'events'
 
 require "Logic/LuaClass"
 require "Logic/EventManager"
 require "Logic/CtrlManager"
 require "Common/functions"
 require "Controller/PromptCtrl"
+
+require "Logic/MyNetwork"
 require "Controller/LZRFirstCtrl"
 require "Controller/LZRSecondCtrl"
 
@@ -42,6 +46,12 @@ function Game.OnInitOK()
     AppConst.SocketPort = 8888;
     AppConst.SocketAddress = "192.168.5.117";
     --networkMgr:SendConnect();
+
+    --出现连接不上服务器会卡住客户端，怀疑是主线程请求数据的挂起等待导致
+    local c = coroutine.create(function()
+        LuaFramework.MyNetworkManager.ReqConnect();
+    end)
+    coroutine.resume(c)
 
     --注册LuaView--
     this.InitViewPanels();
@@ -215,5 +225,5 @@ end
 
 --销毁--
 function Game.OnDestroy()
-	--logWarn('OnDestroy--->>>');
+	logWarn('Game OnDestroy--->>>');
 end

@@ -166,6 +166,8 @@ public class Packager {
 
         AddBuildMap("prompt_asset" + AppConst.ExtName, "*.png", "Assets/LuaFramework/Examples/Textures/Prompt");
         AddBuildMap("shared_asset" + AppConst.ExtName, "*.png", "Assets/LuaFramework/Examples/Textures/Shared");
+
+        AddBuildMap("TestView" + AppConst.ExtName, "*.prefab", "Assets/LuaFramework/Resources");
     }
 
     /// <summary>

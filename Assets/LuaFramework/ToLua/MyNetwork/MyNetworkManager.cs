@@ -28,7 +28,7 @@ namespace LuaFramework {
 	public class MyNetworkManager : Manager 
 	{
 	    private static byte[] result = new byte[1024];
-	    private static IPAddress ip = IPAddress.Parse("192.168.5.118"); //设定服务器IP地址
+	    private static IPAddress ip = IPAddress.Parse("192.168.5.117"); //设定服务器IP地址
 	    private static Socket clientSocket = null; // socket接口
 
 	    private static Thread DoReqConnect = null;
@@ -36,7 +36,6 @@ namespace LuaFramework {
 
 	    private static void Connect()
 	    {
-	    	CloseConnectThread();
 	    	Debug.Log("!!!!TryConnectNetWork!!!!");
 	        clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 	        try
@@ -51,8 +50,10 @@ namespace LuaFramework {
 	        {
 	        	Debug.LogWarning("连接服务器失败，请按回车键退出！");
 	        	CloseRecvThread();
+	        	CloseConnectThread();
 	            return;
 	        }
+	        CloseConnectThread();
 	    }
 
 	    // 连接请求
@@ -101,13 +102,15 @@ namespace LuaFramework {
 	    /// </summary>
 	    public static void RecvMsg()
 	    {
+	    	SendMsg("968764545");
+	    	Debug.Log("连接成功");
 	        try
 	        {
 	            //通过clientSocket接收数据
 	            int receiveLength = clientSocket.Receive(result);
 	            String Str = Encoding.UTF8.GetString(result, 0, receiveLength);
 	            while (Str != "q")
-	            {
+                {
 	                if (receiveLength > 0)
 	                {
 	                    // TODO：协议接口可以写在这里，需要注意的是，当协议内容为空时，协议长度是1，因为字符串结尾默认"0"
@@ -133,7 +136,7 @@ namespace LuaFramework {
 	    }
 
 	    public static void TestMessage(String context) {
-            CallMethod("TestGetData",context);
+            CallMethod("Receive",context);
         }
 
 		/// <summary>
@@ -141,7 +144,7 @@ namespace LuaFramework {
         /// </summary>
         public static object[] CallMethod(String func, params object[] args) {
         	//这个参数写法不熟悉，暂时只传字符串
-            return Util.CallMethod("Game", func,args);
+            return Util.CallMethod("MyNetwork", func,args);
         }
 	}
 }

@@ -17,6 +17,8 @@ require "Logic/EventManager"
 require "Logic/CtrlManager"
 require "Common/functions"
 require "Controller/PromptCtrl"
+
+require "Logic/MyNetwork"
 require "Controller/LZRFirstCtrl"
 require "Controller/LZRSecondCtrl"
 
@@ -48,7 +50,6 @@ function Game.OnInitOK()
     --出现连接不上服务器会卡住客户端，怀疑是主线程请求数据的挂起等待导致
     local c = coroutine.create(function()
         LuaFramework.MyNetworkManager.ReqConnect();
-        LuaFramework.MyNetworkManager.SendMsg("asdf")
     end)
     coroutine.resume(c)
 
@@ -224,10 +225,5 @@ end
 
 --销毁--
 function Game.OnDestroy()
-	--logWarn('OnDestroy--->>>');
-end
-
-
-function Game.TestGetData(data)
-    print('----LZR Game.lua 232-- data=',data)
+	logWarn('Game OnDestroy--->>>');
 end
