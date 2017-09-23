@@ -721,7 +721,7 @@ namespace LuaInterface
 
             fullPath = ToPackagePath(fullPath);
             LuaFileUtils.Instance.RemoveSearchPath(fullPath);
-        }        
+        }
 
         public int BeginPCall(int reference)
         {
@@ -729,17 +729,17 @@ namespace LuaInterface
         }
 
         public void PCall(int args, int oldTop)
-        {            
+        {
             if (LuaDLL.lua_pcall(L, args, LuaDLL.LUA_MULTRET, oldTop) != 0)
             {
                 string error = LuaToString(-1);
                 throw new LuaException(error, LuaException.GetLastError());
-            }            
+            }
         }
 
         public void EndPCall(int oldTop)
         {
-            LuaDLL.lua_settop(L, oldTop - 1);            
+            LuaDLL.lua_settop(L, oldTop - 1);
         }
 
         public void PushArgs(object[] args)
@@ -1132,7 +1132,7 @@ namespace LuaInterface
 
             if (n != 0)
             {
-                Debugger.LogWarning("Lua stack top is {0}", n);
+                //Debugger.LogWarning("Lua stack top is {0}", n);
                 return false;
             }
 

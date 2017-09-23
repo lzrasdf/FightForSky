@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/LuaFramework/Scenes/TestScene.unity
+- path: Assets/LuaFramework/Scenes/main.unity
   isLoaded: 1
   isActive: 1

@@ -256,6 +256,108 @@ local function run_script(script, env)
     return env
 end
 
+
+--[[
+Author:LZR
+Description:获得表长度
+]]
+function getTableLength(data)
+    if type(data) ~= "table" then
+        error("非表数据")
+        return
+    end
+    local count = 0
+    for k,v in pairs(data) do
+        count = count + 1
+    end
+    return count
+end
+
+
+--[[
+Author:LZR
+Description:进制转换部分内容，支持转换最高32位
+]]
+-- local text1 = ConvertDec2X(num, 32)
+-- local num1 = ConvertStr2Dec(text1, 32)
+local _convertTable = {
+    [0]  = "0", [1]  = "1", [2]  = "2", [3]  = "3",
+    [4]  = "4", [5]  = "5", [6]  = "6", [7]  = "7",
+    [8]  = "8", [9]  = "9", [10] = "A", [11] = "B",
+    [12] = "C", [13] = "D", [14] = "E", [15] = "F",
+    [16] = "G", [17] = "H", [18] = "I", [19] = "J",
+    [20] = "K", [21] = "L", [22] = "M", [23] = "N",
+    [24] = "O", [25] = "P", [26] = "Q", [27] = "R",
+    [28] = "S", [29] = "T", [30] = "U", [31] = "V", [32] = "W",
+}
+--进制转换部分内容
+local function GetNumFromChar(char)
+    for k, v in pairs(_convertTable) do
+        if v == char then
+            return k
+        end
+    end
+    return 0
+end
+--进制转换部分内容
+local function Convert(dec, x)
+
+    local function fn(num, t)
+        if(num < x) then
+            table.insert(t, num)
+        else
+            fn( math.floor(num/x), t)
+            table.insert(t, num%x)
+        end
+    end
+
+    local x_t = {}
+    fn(dec, x_t, x)
+
+    return x_t
+end
+--进制转换部分内容
+function ConvertDec2X(dec, x)
+    local x_t = Convert(dec, x)
+
+    local text = ""
+    for k, v in ipairs(x_t) do
+        text = text.._convertTable[v]
+    end
+    return text
+end
+--进制转换部分内容
+function ConvertStr2Dec(text, x)
+    local x_t = {}
+    local len = string.len(text)
+    local index = len
+    while ( index > 0) do
+        local char = string.sub(text, index, index)
+        x_t[#x_t + 1] = GetNumFromChar(char)
+        index = index - 1
+    end
+
+    local num = 0
+    for k, v in ipairs(x_t) do
+        num = num + v * math.pow(x, k - 1)
+    end
+    return num
+end
+--一般二进制需要补足位数，输出字符串
+function ConvertStrAddBit(num, x)
+    local str = tostring(num)
+    local cur_bit = string.len(str)
+    for i=1, x - cur_bit do
+        str = "0" .. str
+    end
+    return str
+end
+
+--[[
+Author:LZR
+Description:制转换部分内容，支持转换最高32位
+]]
+
 -- Export functions
 return {
     serialise_value = serialise_value,
@@ -269,3 +371,5 @@ return {
 }
 
 -- vi:ai et sw=4 ts=4:
+
+

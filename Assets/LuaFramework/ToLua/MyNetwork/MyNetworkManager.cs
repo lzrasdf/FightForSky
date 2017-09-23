@@ -5,12 +5,12 @@
 /// desc :
 ///     1）采用 tcp 协议，多线程的同步通讯
 /// time : 2017/09/20
-///     
-/// todo : 
+///
+/// todo :
 ///     1）心跳包
 ///     2）udp 协议
 ///     3）异步通讯
-/// 
+///
 /// =============================================
 
 using UnityEngine;
@@ -20,12 +20,12 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Net.Sockets;
 using System.Net;
+using System.Net.Sockets;
 using LuaInterface;
 
 namespace LuaFramework {
-	public class MyNetworkManager : Manager 
+	public class MyNetworkManager : Manager
 	{
 	    private static byte[] result = new byte[1024];
 	    private static IPAddress ip = IPAddress.Parse("192.168.5.117"); //设定服务器IP地址
@@ -33,6 +33,7 @@ namespace LuaFramework {
 
 	    private static Thread DoReqConnect = null;
 	    private static Thread recvMsg = null;
+	    public static String datastr;
 
 	    private static void Connect()
 	    {
@@ -102,7 +103,6 @@ namespace LuaFramework {
 	    /// </summary>
 	    public static void RecvMsg()
 	    {
-	    	SendMsg("968764545");
 	    	Debug.Log("连接成功");
 	        try
 	        {
@@ -115,7 +115,7 @@ namespace LuaFramework {
 	                {
 	                    // TODO：协议接口可以写在这里，需要注意的是，当协议内容为空时，协议长度是1，因为字符串结尾默认"0"
 	                    Debug.Log("接收服务器消息:" + Str);
-	                    TestMessage(Str);
+	                    CallMethod("Receive",Str);
 	                }
 	                try
 	                {
@@ -144,7 +144,11 @@ namespace LuaFramework {
         /// </summary>
         public static object[] CallMethod(String func, params object[] args) {
         	//这个参数写法不熟悉，暂时只传字符串
-            return Util.CallMethod("MyNetwork", func,args);
+        	foreach (object s in args)
+        	{
+        		datastr = (String)s;
+        	}
+            return Util.CallMethod("MyNetwork", func,datastr);
         }
 	}
 }

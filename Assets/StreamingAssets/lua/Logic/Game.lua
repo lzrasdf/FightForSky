@@ -28,7 +28,7 @@ require "Controller/KeyInputCtrl"
 Game = {};
 local this = Game;
 
-local game; 
+local game;
 local transform;
 local gameObject;
 local WWW = UnityEngine.WWW;
@@ -36,7 +36,7 @@ local WWW = UnityEngine.WWW;
 function Game.InitViewPanels()
 	for i = 1, #PanelNames do
 		require ("View/"..tostring(PanelNames[i]))
-	end    
+	end
 end
 
 --初始化完成，发送链接服务器信息--
@@ -46,12 +46,6 @@ function Game.OnInitOK()
     AppConst.SocketPort = 8888;
     AppConst.SocketAddress = "192.168.5.117";
     --networkMgr:SendConnect();
-
-    --出现连接不上服务器会卡住客户端，怀疑是主线程请求数据的挂起等待导致
-    local c = coroutine.create(function()
-        LuaFramework.MyNetworkManager.ReqConnect();
-    end)
-    coroutine.resume(c)
 
     --注册LuaView--
     this.InitViewPanels();
@@ -66,18 +60,23 @@ function Game.OnInitOK()
     EventManager.Init();
     CtrlManager.Init();
 
+    local c = coroutine.create(function()
+        LuaFramework.MyNetworkManager.ReqConnect();
+    end)
+    coroutine.resume(c)
+
     logWarn('LuaFramework InitOK--->>>');
 end
 
 --测试协同--
-function Game.test_coroutine()    
+function Game.test_coroutine()
     logWarn("1111");
-    coroutine.wait(1);	
+    coroutine.wait(1);
     logWarn("2222");
-	
+
     local www = WWW("http://bbs.ulua.org/readme.txt");
     coroutine.www(www);
-    logWarn(www.text);    	
+    logWarn(www.text);
 end
 
 --测试sproto--

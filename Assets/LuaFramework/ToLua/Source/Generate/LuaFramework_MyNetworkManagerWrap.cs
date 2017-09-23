@@ -8,6 +8,8 @@ public class LuaFramework_MyNetworkManagerWrap
 	{
 		L.BeginClass(typeof(LuaFramework.MyNetworkManager), typeof(Manager));
 		L.RegFunction("ReqConnect", ReqConnect);
+		L.RegFunction("CloseConnectThread", CloseConnectThread);
+		L.RegFunction("CloseRecvThread", CloseRecvThread);
 		L.RegFunction("ReqDisConnect", ReqDisConnect);
 		L.RegFunction("SendMsg", SendMsg);
 		L.RegFunction("RecvMsg", RecvMsg);
@@ -15,6 +17,7 @@ public class LuaFramework_MyNetworkManagerWrap
 		L.RegFunction("CallMethod", CallMethod);
 		L.RegFunction("__eq", op_Equality);
 		L.RegFunction("__tostring", ToLua.op_ToString);
+		L.RegVar("datastr", get_datastr, set_datastr);
 		L.EndClass();
 	}
 
@@ -25,6 +28,36 @@ public class LuaFramework_MyNetworkManagerWrap
 		{
 			ToLua.CheckArgsCount(L, 0);
 			LuaFramework.MyNetworkManager.ReqConnect();
+			return 0;
+		}
+		catch (Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int CloseConnectThread(IntPtr L)
+	{
+		try
+		{
+			ToLua.CheckArgsCount(L, 0);
+			LuaFramework.MyNetworkManager.CloseConnectThread();
+			return 0;
+		}
+		catch (Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int CloseRecvThread(IntPtr L)
+	{
+		try
+		{
+			ToLua.CheckArgsCount(L, 0);
+			LuaFramework.MyNetworkManager.CloseRecvThread();
 			return 0;
 		}
 		catch (Exception e)
@@ -124,6 +157,35 @@ public class LuaFramework_MyNetworkManagerWrap
 			bool o = arg0 == arg1;
 			LuaDLL.lua_pushboolean(L, o);
 			return 1;
+		}
+		catch (Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_datastr(IntPtr L)
+	{
+		try
+		{
+			LuaDLL.lua_pushstring(L, LuaFramework.MyNetworkManager.datastr);
+			return 1;
+		}
+		catch (Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int set_datastr(IntPtr L)
+	{
+		try
+		{
+			string arg0 = ToLua.CheckString(L, 2);
+			LuaFramework.MyNetworkManager.datastr = arg0;
+			return 0;
 		}
 		catch (Exception e)
 		{

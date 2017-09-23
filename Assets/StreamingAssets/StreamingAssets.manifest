@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1973941849
+CRC: 1708538926
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -16,4 +16,7 @@ AssetBundleManifest:
       Dependencies: {}
     Info_3:
       Name: shared_asset.unity3d
+      Dependencies: {}
+    Info_4:
+      Name: testview.unity3d
       Dependencies: {}

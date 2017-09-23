@@ -1,21 +1,27 @@
-日志文件创建的时间  2017/9/22 10:34:28
-2017/9/22 10:34:28--世界的起点
-2017/9/22 10:34:28--10:34:16.278-1: Init lua state cost: 0.1133124
-2017/9/22 10:34:28--10:34:16.588-1: Register lua type cost time: 0.2883122
-2017/9/22 10:34:28--Initialize OK!!!
-2017/9/22 10:34:28--10:34:16.794-3: LuaState start
-2017/9/22 10:34:28--10:34:16.800-3: [tolua.lua:11]:ver20100 jit:     true    SSE2    SSE3    SSE4.1    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
-2017/9/22 10:34:28--10:34:16.801-3: [tolua.lua:12]:os: Windows, arch: x64
-2017/9/22 10:34:28--HelloWorld
-2017/9/22 10:34:28--连接服务器
-2017/9/22 10:34:28--CtrlManager.Init----->>>
-2017/9/22 10:34:28--PromptCtrl.New--->>
-2017/9/22 10:34:28--MessageCtrl.New--->>
-2017/9/22 10:34:28--LZRFirstCtrl.New--->>
-2017/9/22 10:34:28--LZRSecondCtrl.New--->>
-2017/9/22 10:34:28--KeyInputCtrl.New--->>
-2017/9/22 10:34:28--LuaFramework InitOK--->>>
-2017/9/22 10:34:28--OnPoolPushElement--->>>LuaFramework.TestObjectClass
-2017/9/22 10:34:28--OnPoolGetElement--->>>LuaFramework.TestObjectClass
-2017/9/22 10:34:28--10:34:16.871-3: TestObjectClass--->>>name=abcd value1=100 = value2=200
-2017/9/22 10:34:28--TestGameObject--->>>TestGameObject_01 (UnityEngine.GameObject)
+日志文件创建的时间  2017/9/23 15:14:38
+2017/9/23 15:14:38--世界的起点
+2017/9/23 15:14:38--15:14:19.406-1: Init lua state cost: 0.110386
+2017/9/23 15:14:38--15:14:19.704-1: Register lua type cost time: 0.2769271
+2017/9/23 15:14:38--Initialize OK!!!
+2017/9/23 15:14:38--15:14:19.969-3: LuaState start
+2017/9/23 15:14:38--15:14:19.974-3: [tolua.lua:11]:ver20100 jit:     true    SSE2    SSE3    SSE4.1    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
+2017/9/23 15:14:38--15:14:19.976-3: [tolua.lua:12]:os: Windows, arch: x64
+2017/9/23 15:14:38--HelloWorld
+2017/9/23 15:14:38--CtrlManager.Init----->>>
+2017/9/23 15:14:38--PromptCtrl.New--->>
+2017/9/23 15:14:38--MessageCtrl.New--->>
+2017/9/23 15:14:38--LZRFirstCtrl.New--->>
+2017/9/23 15:14:38--LZRSecondCtrl.New--->>
+2017/9/23 15:14:38--KeyInputCtrl.New--->>
+2017/9/23 15:14:38--LuaFramework InitOK--->>>
+2017/9/23 15:14:38--OnPoolPushElement--->>>LuaFramework.TestObjectClass
+2017/9/23 15:14:38--OnPoolGetElement--->>>LuaFramework.TestObjectClass
+2017/9/23 15:14:38--15:14:20.39-3: TestObjectClass--->>>name=abcd value1=100 = value2=200
+2017/9/23 15:14:38--TestGameObject--->>>TestGameObject_01 (UnityEngine.GameObject)
+2017/9/23 15:14:38--15:14:21.511-91: [Controller/KeyInputCtrl.lua:41]:绑定网络测试事件
+2017/9/23 15:14:38--15:14:22.340-141: [Logic/MyNetwork.lua:92]:----LZR MyNetWork.lua 92--=    14907
+2017/9/23 15:14:38--15:14:22.341-141: [Logic/MyNetwork.lua:110]:----LZR MyNetWork.lua 110-- msg=    001110100011101100001000
+2017/9/23 15:14:38--15:14:22.342-141: [Logic/MyNetwork.lua:110]:----LZR MyNetWork.lua 110-- msg=    0011101000111011000010000000000000000011str
+2017/9/23 15:14:38--15:14:22.342-141: [Logic/MyNetwork.lua:110]:----LZR MyNetWork.lua 110-- msg=    0011101000111011000010000000000000000011str00000001
+2017/9/23 15:14:38--15:14:22.343-141: [Logic/MyNetwork.lua:112]:----LZR MyNetWork.lua 111-- msg=    0011101000111011000010000000000000000011str00000001
+2017/9/23 15:14:38--向服务器发送消息:0011101000111011000010000000000000000011str00000001
